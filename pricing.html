@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing Schedule | Chromelite Technologies Limited</title>
+  <link rel="stylesheet" href="chromelite.css">
+
+  <!-- Internal CSS: print styles only -->
+  <style>
+    @media print {
+      /* Hide everything except the table */
+      .site-header,
+      .navbar,
+      .site-footer,
+      .page-title,
+      .print-hint {
+        display: none;
+      }
+
+      body {
+        background: #ffffff;
+        color: #000000;
+      }
+
+      .pricing-page {
+        padding: 0;
+        max-width: none;
+      }
+
+      .table-wrap {
+        overflow: visible;
+      }
+
+      table.pricing {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      /* Full borders on every cell */
+      table.pricing,
+      table.pricing th,
+      table.pricing td {
+        border: 1px solid #000000;
+        background: #ffffff;
+        color: #000000;
+      }
+
+      table.pricing caption {
+        display: block;
+        position: static;
+        width: auto;
+        height: auto;
+        clip: auto;
+        color: #000000;
+        font-weight: bold;
+        font-size: 14pt;
+        text-align: left;
+        padding-bottom: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <!-- Inline CSS is used for the logo only -->
+    <a href="index.html"><img src="chromelite-logo.png" alt="Chromelite Technologies Limited" style="width:180px;"></a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="pricing.html">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pricing-page">
+    <h1 class="page-title">Pricing Schedule</h1>
+    <p class="print-hint">Use your browser's Print option to print the table only.</p>
+
+    <div class="table-wrap">
+      <table class="pricing">
+        <caption>Chromelite Technologies Limited, Pricing Schedule</caption>
+        <thead>
+          <tr>
+            <th scope="col">Item No.</th>
+            <th scope="col">Category</th>
+            <th scope="col">Product Description</th>
+            <th scope="col">Unit Price (UGX)</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Total (UGX)</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- Category 1: Branded Stationery -->
+          <tr>
+            <td>1</td>
+            <td rowspan="3" class="category">Branded Stationery</td>
+            <td>Business cards (box of 500)</td>
+            <td class="num">45,000</td><td class="num">10</td><td class="num">450,000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>A4 letterheads (ream of 500)</td>
+            <td class="num">120,000</td><td class="num">5</td><td class="num">600,000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Branded A5 notebooks</td>
+            <td class="num">15,000</td><td class="num">40</td><td class="num">600,000</td>
+          </tr>
+
+          <!-- Category 2: Event Materials -->
+          <tr>
+            <td>4</td>
+            <td rowspan="3" class="category">Event Materials</td>
+            <td>Roll-up banner (85 × 200 cm)</td>
+            <td class="num">180,000</td><td class="num">6</td><td class="num">1,080,000</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Printed event backdrop (3 × 2 m)</td>
+            <td class="num">350,000</td><td class="num">2</td><td class="num">700,000</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Lanyards with ID holders</td>
+            <td class="num">6,000</td><td class="num">100</td><td class="num">600,000</td>
+          </tr>
+
+          <!-- Category 3: Branded Apparel -->
+          <tr>
+            <td>7</td>
+            <td rowspan="3" class="category">Branded Apparel</td>
+            <td>Embroidered polo shirts</td>
+            <td class="num">40,000</td><td class="num">50</td><td class="num">2,000,000</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Branded caps</td>
+            <td class="num">18,000</td><td class="num">60</td><td class="num">1,080,000</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Reflective safety vests</td>
+            <td class="num">25,000</td><td class="num">30</td><td class="num">750,000</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="5">Subtotal</td>
+            <td class="num">7,860,000</td>
+          </tr>
+          <tr>
+            <td colspan="5">VAT @ 18%</td>
+            <td class="num">1,414,800</td>
+          </tr>
+          <tr class="grand">
+            <td colspan="5">Grand Total</td>
+            <td class="num">9,274,800</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p class="company">Chromelite Technologies Limited</p>
+    <p>Grand City Complex, Naalya, Kampala</p>
+    <p>Phone: +256 700 000 000 | Email: info@chromelite.example</p>
+    <p class="copy">&copy; 2026 Chromelite Technologies Limited. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

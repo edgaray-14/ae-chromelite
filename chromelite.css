@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --navy: #003153;
+  --orange: #FF6600;
+  --bg: #f4f6f8;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1d2b36;
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ===== HEADER + NAVBAR ===== */
+.site-header {
+  background: var(--navy);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 32px;
+  border-bottom: 4px solid var(--orange);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #FF6600;
+}
+
+.navbar a.active {
+  border-bottom: 3px solid var(--orange);
+  padding-bottom: 3px;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 3px;
+}
+
+/* ===== INTRO ===== */
+.intro {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 70px 24px 30px;
+}
+
+.intro h1 {
+  font-size: clamp(1.9rem, 4.5vw, 3rem);
+  color: var(--navy);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  max-width: 62ch;
+  margin-bottom: 26px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--orange);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--navy);
+}
+
+/* ===== WHY CHOOSE (3 floated cards) ===== */
+.why {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px 70px;
+}
+
+.why h2 {
+  font-size: 1.8rem;
+  color: var(--navy);
+  margin-bottom: 26px;
+}
+
+.card {
+  float: left;
+  width: 31.33%;
+  margin-right: 3%;
+  background: #ffffff;
+  border-top: 5px solid var(--orange);
+  border-radius: 6px;
+  padding: 26px 22px;
+  box-shadow: 0 2px 10px rgba(0, 49, 83, 0.1);
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+/* ===== PRICING PAGE ===== */
+.pricing-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 24px 70px;
+}
+
+.pricing-page h1 {
+  font-size: 2.2rem;
+  color: var(--navy);
+}
+
+.print-hint {
+  color: #5a6b78;
+  margin: 4px 0 24px;
+  font-size: 0.92rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table.pricing {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.pricing caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.pricing th,
+.pricing td {
+  padding: 12px 14px;
+  border: 1px solid #d3dbe2;
+  text-align: left;
+}
+
+.pricing thead th {
+  background: var(--navy);
+  color: #ffffff;
+}
+
+.pricing td.category {
+  background: #fff1e6;
+  color: var(--navy);
+  font-weight: bold;
+  vertical-align: middle;
+  border-left: 4px solid var(--orange);
+}
+
+.pricing td.num,
+.pricing thead th:nth-child(n+4) {
+  text-align: right;
+}
+
+.pricing tfoot td {
+  font-weight: bold;
+  background: #eef2f5;
+}
+
+.pricing tfoot td:first-child {
+  text-align: right;
+}
+
+.pricing tfoot tr.grand td {
+  background: var(--navy);
+  color: #ffffff;
+  font-size: 1.05rem;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background: var(--navy);
+  color: #ffffff;
+  text-align: center;
+  padding: 28px 20px;
+  border-top: 4px solid var(--orange);
+}
+
+.site-footer .company {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--orange);
+}
+
+.site-footer .copy {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 800px) {
+  .site-header {
+    flex-direction: column;
+    gap: 14px;
+    padding: 14px 16px;
+  }
+
+  .card {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}
